@@ -20,7 +20,7 @@ plot(chart.data$DateTime, chart.data$Voltage, xlab = "datetime", ylab="Voltage",
 plot(chart.data$DateTime,chart.data$Sub_metering_1, xlab="", ylab="Energy Sub Metering", type="l")
 lines(chart.data$DateTime, chart.data$Sub_metering_2, col = "red")
 lines(chart.data$DateTime, chart.data$Sub_metering_3, col = "blue")
-legend("topright", cex = 0.7, bty = "n", legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'),col=c('black', 'red', 'blue'), lty = 1)
+legend("topright", bty = "n", legend=c('Sub_metering_1', 'Sub_metering_2', 'Sub_metering_3'),col=c('black', 'red', 'blue'), lty = 1)
 
 # Plot (2, 2)
 plot(chart.data$DateTime, chart.data$Global_reactive_power, xlab="datetime", ylab="Global_reactive_power", type="l")
